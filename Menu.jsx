@@ -1,7 +1,7 @@
 
 function Menu() {
     return (
-        <div className="flex justify-end items-center border-e text-xs text-white border-2 border-stone-500 h-12 ">
+        <div className="flex justify-end items-center text-xs text-white border-x-2 border-t-2 border-b-none border-x-stone-500 border-t-stone-500 border-b-none h-12 ">
             <div className="w-3/4 flex items-center justify-between gap-1">
                 <div className="basis-4 flex justify-center items-center px-10">Portfolio</div>
                 <div className="w-3/4 relative">
@@ -29,13 +29,14 @@ function Menu() {
                             <div className="text-slate-300 px-2 text-xs">Cash</div>
                             <div className="text-center text-green-600 font-bold text-[10px]">$0.00</div>
                         </div>
-                        <div className="flex-col items-center border-none rounded-sm hover:bg-stone-500  cursor-pointer">
-                            <div className="text-slate-300 px-2 text-xs">Cash</div>
-                            <div className="text-center text-green-600 font-bold text-[10px]">$0.00</div>
+                        <div className="flex h-8 items-center justify-center cursor-pointer">
+                            <button
+                                className="bg-amber-700 h-6 px-2 border-none rounded-sm font-bold text-xs hover:bg-amber-600 cursor-pointer"
+                            >Deposit</button>
                         </div>
 
                         <div>
-                            <img src="" alt=""/>
+                            <span className="material-symbols-outlined cursor-pointer text-slate-300">notifications</span>
                         </div>
                     </div>
                     <div className="bais-1/4">
