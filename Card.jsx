@@ -41,7 +41,20 @@ function Card(){
                     <button className="h-auto w-full text-slate-200 text-sm font-bold cursor-pointer bg-red-900 hover:bg-red-500 rounded-sm">No</button>
                 </div>
                 {/*Yarın devam edecağm*/}
-                <div>end</div>
+                <div className="flex justify-between items-center">
+                    <div className="flex justify-between gap-4">
+                        <div className="text-xs text-slate-400 font-medium">$25mil Vol.</div>
+                        <div>
+                            <span className="material-symbols-outlined small-icon text-slate-300 text-xs">repeat</span>
+
+
+                        </div>
+                    </div>
+                    <div>
+                        <span className="material-symbols-outlined text-slate-300 text-xs">bookmark</span>
+
+                    </div>
+                </div>
             </div>
             <div className="bg-white h-full w-1/4">2</div>
             <div className="bg-green-300 h-full w-1/4">3</div>
