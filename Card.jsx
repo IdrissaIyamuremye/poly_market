@@ -2,9 +2,11 @@ import React  from "react";
 import { useState} from "react";
 import kahmenei from "./assets/Image/khamenei.webp"
 function Card(){
+const handleclick = (e)=>e.target.style.backgroundColor="white";
+const handleClick2 = (name)=>console.log(`${name} stop clicking`)
     return(
         <div className="w-full h-40 flex justify-between gap-2 border-2 border-white p-2">
-            <div className="bg-amber-700 h-full w-1/4 grid grid-cols-1 gap-2 rounded-xl">
+            <div className="bg-amber-700 h-full w-1/4 grid grid-cols-1 gap-2 p-1.5 rounded-xl">
                 <div className="flex justify-between gap-4 h-10">
                     <div className="flex justify-start items-start h-full basis-1/4 ">
                         <img src={kahmenei} className="h-full w-full rounded-sm" alt=""/>
@@ -42,16 +44,15 @@ function Card(){
                 </div>
                 {/*Yarın devam edecağm*/}
                 <div className="flex justify-between items-center">
-                    <div className="flex justify-between gap-4">
-                        <div className="text-xs text-slate-400 font-medium">$25mil Vol.</div>
-                        <div>
-                            <span className="material-symbols-outlined small-icon text-slate-300 text-xs">repeat</span>
-
+                    <div className="flex justify-between item">
+                        <div className="text-[10px] text-slate-300 font-medium flex justify-center items-center">$25mil Vol.</div>
+                        <div className="flex justify-between item">
+                            <span className="material-symbols-outlined small-icon text-slate-300 text-[8px] scale-60">repeat</span>
 
                         </div>
                     </div>
-                    <div>
-                        <span className="material-symbols-outlined text-slate-300 text-xs">bookmark</span>
+                    <div className="flex justify-center items-center">
+                        <span className="material-symbols-outlined text-slate-300 text-[8px] scale-60 hover:cursor-pointer" onClick={()=>handleClick2("Mye")}>bookmark</span>
 
                     </div>
                 </div>
